@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 8vh;
+    background-color: red;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+.main .header img{
+    width: 55px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.main .header .nav{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main .header .nav li{
+    list-style: none;
+    margin: 0 40px;
+}
+
+.main .header .nav li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.main .header .nav li a:hover{
+    color: yellow;
+    border-bottom: 2px solid #fff;
+}
+
+.main .header i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Home Page */
+
+.home{
+    margin: 25px 0;
+    width: 100%;
+    height: 690px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .homeInfo{
+   width: 90%;
+   text-align: center;
+}
+
+.home .homeInfo h3{
+    font-size: 40px;
+    color: #fff;
+    padding: 12px 0;
+    text-transform: capitalize;
+}
+
+.home .homeInfo h5{
+    font-size: 34px;
+    color: red;
+    padding: 16px 0;
+}
+
+.home .homeInfo p{
+    padding: 16px 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.home .homeInfo .btn{
+    padding: 9px 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home .homeInfo .show{
+    visibility: visible;
+}
+
+.home .homeInfo .hide{
+    visibility: hidden;
+}
+
+.about{
+    margin: 25px 0;
+    width: 100%;
+    height: 690px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .title{
+    text-align: center;
+    font-size: 34px;
+    padding: 20px 0;
+    color: red;
+}
+
+.about .aboutInfo{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    align-items: center;
+   }
+
+   .about .aboutInfo .aboutLeft{
+      width: 50%;
+   }
+
+   .about .aboutInfo .aboutLeft img{
+      width: 450px;
+      border-radius: 5px;
+      cursor: pointer;
+   }
+
+   .about .aboutInfo .aboutRight{
+      width: 50%;
+   }
+   .about .aboutInfo .aboutRight h3 {
+  font-size: 34px;
+  color: red;
+}
+
+.about .aboutInfo .aboutRight p {
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: rgb(118, 118, 118);
+  padding: 10px 0;
+}
+
+.about .aboutInfo .aboutRight .achieve {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.about .aboutInfo .aboutRight .achieve .quality {
+  width: 120px;
+  height: 120px;
+  background-color: rgb(120, 74, 245);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about .aboutInfo .aboutRight .achieve .quality h5 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.about .aboutInfo .aboutRight .achieve .quality img {
+  width: 50px;
+}
+
+.about .aboutInfo .aboutRight .achieve .award {
+  width: 120px;
+  height: 120px;
+  background-color: rgb(120, 74, 245);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about .aboutInfo .aboutRight .achieve .award h5 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.about .aboutInfo .aboutRight .achieve .award img {
+  width: 50px;
+}
+
+.about .aboutInfo .aboutRight .btn1 {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s all;
+  border: none;
+}
+
+.about .aboutInfo .aboutRight .btn1:hover{
+    background-color: red;
+}
+
+.about .aboutInfo .show{
+    visibility: visible;
+}
+
+.about .aboutInfo .hide{
+    visibility: hidden;
+}
+
+.product{
+  margin: 25px 0;
+    width: 100%;
+    height: 690px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .title{
+  text-align: center;
+    font-size: 34px;
+    padding: 20px 0;
+    color: red;
+}
+
+.product .productInfo{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.product .productInfo .productCard{
+  width: 350px;
+  height: 440px;
+  background-color: rgb(225, 224, 224);
+  text-align: center;
+  display: block;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.product .productInfo .productCard img{
+  border-radius: 5px;
+  margin: 20px 0;
+  width: 170px;
+}
+
+.product .productInfo .productCard h3 {
+  color: red;
+  font-size: 24px;
+  padding: 10px 0;
+}
+
+.product .productInfo .productCard h4{
+    color: #000;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.product .productInfo .productCard button{
+  margin: 12px 0;
+  border: none;
+  padding: 11px 16px;
+  font-weight: bold;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.cart{
+  position: absolute;
+  left: 55%;
+  width: 650px;
+  min-height: 600px;
+  background-color: #fff;
+  display: flex;
+  top: 8%;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart .title{
+  text-align: center;
+    font-size: 34px;
+    padding: 20px 0;
+    color: red;
+}
+
+.cart .cartInfo{
+  width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.cart .cartInfo .cartList{
+  width: 250px;
+  height: 400px;
+  background-color: rgb(225, 224, 224);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.cart .cartInfo .cartList img{
+  border-radius: 5px;
+  margin: 20px 0;
+  width: 100px;
+  height: 120px;
+}
+
+.cart .cartInfo .cartList h3{
+  color: red;
+  font-size: 20px;
+  padding: 12px 0;
+}
+
+.cart .cartInfo .cartList h4{
+  color: #000;
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+.cart .cartInfo .cartList button{
+  margin: 12px 0;
+  border: none;
+  padding: 11px 16px;
+  font-weight: bold;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.review{
+    margin: 25px 0;
+    width: 100%;
+    height: 690px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review .title{
+    text-align: center;
+    font-size: 34px;
+    padding: 20px 0;
+    color: red;
+}
+
+
+.review .reviewInfo {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .review .reviewInfo .reviewCard {
+    width: 350px;
+    height: 440px;
+    background-color: rgb(227, 224, 224);
+    text-align: center;
+    display: block;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .review .reviewInfo .reviewCard img{
+    border-radius: 5px;
+    margin: 20px 0;
+  }
+  
+  .review .reviewInfo .reviewCard h4 {
+    color: red;
+    font-size: 24px;
+    padding: 10px 0;
+  }
+  
+  .review .reviewInfo .reviewCard .rating {
+    padding: 5px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .review .reviewInfo .reviewCard .socialIcon {
+    padding: 15px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 18px;
+  }
+  
+  .review .reviewInfo .reviewCard .socialIcon i {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s all;
+  }
+  
+  .review .reviewInfo .reviewCard .socialIcon i:hover{
+    background-color: #fff;
+    color: red;
+  }
+  
+  .review .reviewInfo .reviewCard button{
+    padding: 11px 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    background-color: red;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 8px 0;
+    color: #fff;
+    transition: 0.5s all;
+  }
+  .review .reviewInfo .reviewCard button:hover{
+    background-color: rgb(1, 179, 249);
+  }
+
+
+
+.contact{
+    margin-top: 25px;
+    width: 100%;
+    height: 690px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .contact .title{
+    text-align: center;
+    font-size: 34px;
+    color: red;
+ }
+ .contact .contactInfo form {
+    width: 500px;
+    margin: 75px 0;
+    text-align: center;
+}
+
+.contact .contactInfo form input {
+width: 90%;
+height: 4.5vh;
+margin: 15px;
+}
+
+.contact .contactInfo form input::placeholder{
+  padding: 0 5px;
+}
+
+.contact .contactInfo form button {
+display: block;
+position: relative;
+left: 41%;
+margin: 15px 0;
+padding: 8px 20px;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+background-color: red;
+color: #fff;
+transition: 0.5s all;
+}
+
+.contact .contactInfo form button:hover{
+ color: red;
+ background-color: black;
+}
+
+  

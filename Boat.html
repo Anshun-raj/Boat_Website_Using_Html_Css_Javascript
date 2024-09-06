@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Website</title>
+    <link rel="icon" type="image/x-icon" href="./Images/Icon.png">
+    <link rel="stylesheet" href="./Boat.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="main">
+        <!-----------Header---------- -->
+       <div class="header">
+          <img src="./Images/logo.png" alt=""/>
+          <div class="nav">
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#product">Product</a></li>
+             <li><a href="#review">Review</a></li>
+             <li><a href="#contact">Contact</a></li>
+          </div>
+          <i class="fas fa-shopping-cart" id="cartPage"><span class="quantity">0</span></i>
+       </div>
+
+       <!---------HOME----------->
+       <div class="home" id="home">
+           <div class="homeInfo">
+              <h3>Plug In To Surya</h3>
+              <h5>When you take a boat, you leave everything behind. You plug into a new zone</h5>
+              <p id="txt" class="hide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur laboriosam doloremque qui nostrum perferendis id placeat modi exercitationem cum repellat eligendi, ea ab ipsum nisi quae autem itaque corrupti! Consequuntur sint maiores, ab ea fugit molestiae blanditiis perferendis suscipit distinctio.</p>
+              <button class="btn">Know More</button>
+           </div>
+       </div>
+
+       <!-----------ABOUT------------->
+       <div class="about" id="about">
+         <h2 class="title">About Us</h2>
+         <div class="aboutInfo">
+            <div class="aboutLeft">
+               <img src="./Images/aboutImg.jpg" alt=""/>
+            </div>
+            <div class="aboutRight">
+             <h3>Quality Is Remembered Long After Price Is Forgotten</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+                nihil inventore error provident at natus placeat, quia est unde
+                adipisci consectetur voluptatibus assumenda.
+              </p>
+              <p id="txt1" class="hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+                nihil inventore error provident at natus placeat, quia est unde
+                adipisci consectetur voluptatibus assumenda."</p>
+              <div class="achieve">
+                <div class="quality">
+                  <img src="./Images/about4.jpeg" />
+                  <h5>Best Quality</h5>
+                </div>
+                <div class="award">
+                  <img src="./Images/about6.jpeg" />
+                  <h5>Award Winning</h5>
+                </div>
+              </div>
+              <button class="btn1" >Read More</button>
+            </div>
+         </div>
+       </div>
+
+       <!-----------PRODUCT------------->
+       <div class="product" id="product">
+        <h2 class="title">Our Product</h2>
+          <div class="productInfo" id="product-item-container">
+          </div>
+       </div>
+
+       <div class="cart" id="cart">
+         <h2 class="title">Cart Page</h2>
+         <div class="cartInfo">
+            
+         </div>
+       </div>
+
+       <!------------REVIEW------------>
+
+       <div class="review" id="review">
+         <h2 class="title">Our Reviewers</h2>
+         <div class="reviewInfo">
+            <div class="reviewCard">
+              <img src="./Images/review1.jpg" alt="" />
+              <h4>Shawn Micheal</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="socialIcon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+              <button>Know More</button>
+            </div>
+            <div class="reviewCard">
+              <img src="./Images/review2.jpg" alt="" />
+              <h4>Dwarne Johnson</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="socialIcon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+              <button>Know More</button>
+    
+            </div>
+            <div class="reviewCard">
+              <img src="./Images/review3.jpg" alt=""/>
+              <h4>Roman Reign</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="socialIcon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+              <button>Know More</button>
+            </div>
+        </div>
+     </div>
+
+       <!-----------CONTACT------------>
+
+     <div class="contact" id="contact">
+      <h2 class="title">Contact Us</h2>
+      <div class="contactInfo">
+      <form>
+          <fieldset>
+            <input type="text" placeholder="enter your name" />
+            <input type="email" placeholder="enter your email" />
+            <input
+              type="number"
+              placeholder="enter your age"
+              max="50"
+              min="18"
+            />
+            <input type="number" placeholder="enter your number"/>
+            <input type="text" placeholder="message" />
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+    </div>
+      
+    </div>
+    </div>
+    <script src="Boat.js"></script>
+</body>
+</html>
